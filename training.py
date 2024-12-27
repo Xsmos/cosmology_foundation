@@ -6,7 +6,7 @@ from stellarperceptron.model import StellarPerceptron
 
 
 # ================== hardware-related settings ==================
-device = "cuda:0"  # "cpu" for CPU or "cuda:x" for a NVIDIA GPU
+device = "cuda"  # "cpu" for CPU or "cuda:x" for a NVIDIA GPU
 mixed_precision = True  # use mixed precision training for CUDA
 torch.backends.cuda.matmul.allow_tf32 = True  # use tf32 for CUDA matrix multiplication
 torch.backends.cudnn.allow_tf32 = True  # use tf32 for CUDNN
@@ -24,7 +24,7 @@ batch_size = 1024  # batch size
 epochs = 4096  # number of epochs to train
 cosine_annealing_t0 = 512  # cosine annealing restart length in epochs
 checkpoint_every_n_epochs = 128  # save a checkpoint every n epochs
-save_model_to_folder = "./model_torch/"  # folder to save the model
+save_model_to_folder = "./model_torch_Xia/"  # folder to save the model
 # ================== training-related settings ==================
 
 # load training data
