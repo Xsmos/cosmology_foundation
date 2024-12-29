@@ -336,7 +336,7 @@ class StellarPerceptron(StellarPerceptronCore):
 
         # ====================== Training logic ======================
         elapsed_time = 0
-        with tqdm.tqdm(range(epochs), unit="epoch") as pbar:
+        with tqdm.tqdm(range(epochs), unit="epoch", disable=True) as pbar:
             for epoch in pbar:
                 self.epoch = epoch + 1
                 # print(f"Epoch {self.epoch}/{self.epochs}")

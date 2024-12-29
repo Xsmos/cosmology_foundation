@@ -7,6 +7,7 @@ figs/
 data_files/
 trained_models/
 model_torch*/
+model-*
 
 ### macOS ###
 # General
